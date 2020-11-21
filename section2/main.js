@@ -1,4 +1,7 @@
 var app = new Vue({
 	// options
-  el: '#app'
+  el: '#app',
+  data: {
+  	message: 'Hello Vue.js!'
+  }
 })
