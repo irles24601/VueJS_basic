@@ -12,7 +12,8 @@ new Vue({
 
       // todoにnewItemを追加する
       var todo = {
-      	item: this.newItem
+      	item: this.newItem,
+        isDone: false
       };
       this.todos.push(todo);
 
