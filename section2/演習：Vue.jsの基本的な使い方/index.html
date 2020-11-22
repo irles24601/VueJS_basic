@@ -3,6 +3,13 @@
   <p v-if="toggle">
     <a v-bind:href="url">Vue.js</a>
   </p>
+  <button v-on:click="clickHandler">
+    Click!
+  </button>
+  <ul>
+    <li v-for="language in languages">{{ language }}</li>
+  </ul>
+  <input type="text" v-model="message">
 </div>
 
 
