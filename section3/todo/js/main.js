@@ -19,6 +19,10 @@ new Vue({
 
       // 追加後のインプット欄を空にする
       this.newItem = '';
+    },
+    deleteItem: function(index){
+      // alert(index);
+      this.todos.splice(index, 1);
     }
   }
 })
