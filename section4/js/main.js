@@ -9,5 +9,8 @@ new Vue({
       // console.log(response.data.bpi.USD.rate_float)
       this.bpi = response.data.bpi
     }.bind(this))
+    .catch(function(error){
+      console.log(error)
+    })
   }
 })
