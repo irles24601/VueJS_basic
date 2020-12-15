@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Vue.js</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div id="app">
+    {{ message }}
+    <!-- 基本的にはMustache構文で統一したほうが良い -->
+    <p v-text="message"></p>
+    <!-- v-textでは下記のような使い方がしにくい -->
+    <p>
+      "{{ message }}"
+    </p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
